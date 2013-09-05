@@ -24,7 +24,7 @@ sub expand {
         $agent = LWP::UserAgent->new(agent => $text_agent);
     }
     
-    $agent->request(HTTP::Request->new(GET => $url))->request->uri;
+    $agent->request(HTTP::Request->new(HEAD => $url))->request->uri;
 }
 1;
 
