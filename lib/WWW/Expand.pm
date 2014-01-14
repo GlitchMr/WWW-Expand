@@ -26,7 +26,7 @@ sub expand {
     
     $agent->request(HTTP::Request->new(HEAD => $url))->request->uri;
 }
-1;
+"https://github.com/xfix";
 
 =head1 NAME
 
